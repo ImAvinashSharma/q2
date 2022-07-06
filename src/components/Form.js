@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import uniqid from "uniqid";
 function Form(props) {
+  const id = uniqid();
   const initContact = {
-    id: uniqid(),
+    id: id,
     userName: "Avinash Sharma",
     userEmail: "admin@avinash-sharma.com",
     userPhone: "8885559999",
@@ -30,7 +31,7 @@ function Form(props) {
     <form onSubmit={handleSubmit}>
       <label>Please enter your name</label>
       <br />
-      <input type="text" name="userName" onChange={handleUserChange} />
+      <input type="text" id={id} name="userName" onChange={handleUserChange} />
       <br />
       <label>Please enter your email</label>
       <br />
