@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-
+import uniqid from "uniqid";
 function Form(props) {
   const initContact = {
-    id: 1,
+    id: uniqid(),
     userName: "Avinash Sharma",
     userEmail: "admin@avinash-sharma.com",
     userPhone: "8885559999",

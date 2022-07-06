@@ -46,6 +46,10 @@ h2 {
   padding: 20px;
 }
 
+.card__item {
+  margin: 20px;
+}
+
 .submitBtn {
   margin-top: 10px;
   padding: 10px 15px;
@@ -71,6 +75,8 @@ form {
   overflow: hidden;
   background: white;
   border-radius: 10px;
+  border-style:solid;
+  box-shadow: 10px 10px 20px #BDBDBD;
 }
 
 form label {

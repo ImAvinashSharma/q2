@@ -2,12 +2,12 @@ import "./App.css";
 import Form from "./components/Form";
 import Display from "./components/Display";
 import { useState } from "react";
-
+import uniqid from "uniqid";
 function App() {
   const usersObj = [];
   const [users, setUsers] = useState(usersObj);
   const addUser = user => {
-    user.id = users.length + 1;
+    user.id = uniqid();
     setUsers([...users, user]);
   };
   const deleteUser = id => {

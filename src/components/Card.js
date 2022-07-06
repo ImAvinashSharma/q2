@@ -7,10 +7,10 @@ function Card({ name, email, pNumber, profile }) {
         <img src={profile} />
       </div>
       <div className="card__copy">
-        <h1>Name {name}</h1>
-        <h2>Email {email}</h2>
-        <h2>Number {pNumber}</h2>
-        <button>Delete</button>
+        <h1 className="card__item">Name {name}</h1>
+        <h2 className="card__item">Email {email}</h2>
+        <h2 className="card__item">Number {pNumber}</h2>
+        <button className="card__item">Delete</button>
       </div>
     </div>
   );
