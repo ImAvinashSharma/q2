@@ -70,14 +70,15 @@ h2 {
 form {
   margin: 10% auto 0 auto;
   padding: 30px;
-  width: 400px;
+  width: 600px;
   height: auto;
   overflow: hidden;
   background: white;
   border-radius: 10px;
   border-style:solid;
   border-width: 0.6px;
-  box-shadow: 10px 10px 20px #BDBDBD;
+  box-shadow: 10px 10px 20px #d2d2d2;
+  background-color: #f3f3f3;
 }
 
 form label {
@@ -86,14 +87,14 @@ form label {
   cursor: pointer;
 }
 
-form label,
-form input {
+form label, form input {
   float: left;
   clear: both;
 }
-form input {
-  margin: 15px 0;
-  padding: 15px 10px;
+
+form .input{
+  margin: 12px 0;
+  padding: 12px 10px;
   width: 100%;
   outline: none;
   border: 1px solid #bbb;
@@ -101,4 +102,16 @@ form input {
   display: inline-block;
   box-sizing: border-box;
   transition: 0.2s ease all;
+}
+form input[type="submit"] {
+  margin: 12px 0;
+  padding: 12px 10px;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(40, 37, 170);
+  box-sizing: border-box;
+  box-shadow: 10px 10px 20px #d2d2d2;
 }

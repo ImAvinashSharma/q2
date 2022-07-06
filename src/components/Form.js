@@ -5,8 +5,8 @@ function Form(props) {
   const id = uniqid();
   const initContact = {
     id: id,
-    userName: "Avinash Sharma",
-    userEmail: "admin@avinash-sharma.com",
+    userName: "dummy",
+    userEmail: "admin@dummy.com",
     userPhone: "8885559999",
     userProfile: "https://images.unsplash.com/photo-1656954261081-93c805b386b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
   };
@@ -31,19 +31,19 @@ function Form(props) {
     <form onSubmit={handleSubmit}>
       <label>Please enter your name</label>
       <br />
-      <input type="text" id={id} name="userName" onChange={handleUserChange} />
+      <input className="input" type="text" id={id} name="userName" onChange={handleUserChange} />
       <br />
       <label>Please enter your email</label>
       <br />
-      <input type="email" name="userEmail" onChange={handleUserChange} />
+      <input className="input" type="email" name="userEmail" onChange={handleUserChange} />
       <br />
       <label>Enter your Contact Number</label>
       <br />
-      <input type="number" name="userPhone" onChange={handleUserChange} />
+      <input className="input" type="number" name="userPhone" onChange={handleUserChange} />
       <br />
       <label>Paste your profile picture URL:</label>
       <br />
-      <input type="url" name="userProfile" onChange={handleUserChange} />
+      <input className="input" type="url" name="userProfile" onChange={handleUserChange} />
       <br />
       <input type="submit" value="Create Card" />
     </form>

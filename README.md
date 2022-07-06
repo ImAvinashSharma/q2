@@ -1,5 +1,3 @@
-# Made with ❤️ by [Avinash Sharma](http://avinash-sharma.com/)
-
 ## Run
 
 ```sh
